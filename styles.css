@@ -1,69 +1,35 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em;
-}
-
-section {
-    background-color: #f7f7f7;
-    padding: 2em;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2 {
-    color: #333;
-    margin-top: 0;
-}
-
-button {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #3e8e41;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-    clear: both;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vibrant Background and Soft Color Button</title>
+  <style>
+    body {
+      background-color: #f7dc6f;
+      background-image: linear-gradient(to bottom, #f7dc6f, #ffd700);
+      background-size: 100% 300px;
+      background-position: 0% 100%;
+    }
+    .button {
+      background-color: #c9e4ca;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #8bc34a;
+    }
+  </style>
+</head>
+<body>
+  <button class="button">Click me!</button>
+  <script>
+    const button = document.querySelector('.button');
+    button.addEventListener('click', () => {
+      const audio = new Audio('vibraphone-sound.mp3');
+      audio.play();
+    });
+  </script>
+</body>
+</html>
